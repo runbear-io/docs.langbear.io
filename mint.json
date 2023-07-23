@@ -47,7 +47,28 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction", "quickstart"]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development/prompts",
+        "development/few-shot-examples",
+        "development/localization"
+      ]
+    },
+    {
+      "group": "Admin",
+      "pages": [
+        {
+          "group": "Databases",
+          "pages": ["databases/supabase", "databases/postgres"]
+        },
+        {
+          "group": "Deployment",
+          "pages": ["deployment/vercel"]
+        }
+      ]
     },
     {
       "group": "Essentials",
