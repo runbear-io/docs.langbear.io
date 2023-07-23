@@ -60,15 +60,15 @@
       ]
     },
     {
-      "group": "Admin",
+      "group": "Application",
       "pages": [
         {
-          "group": "Databases",
-          "pages": ["databases/supabase", "databases/postgres"]
+          "group": "Database",
+          "pages": ["application/supabase"]
         },
         {
           "group": "Deployment",
-          "pages": ["deployment/vercel"]
+          "pages": ["application/vercel"]
         }
       ]
     },
@@ -91,8 +91,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/runbear_io",
+    "github": "https://github.com/runbear-io",
+    "linkedin": "https://www.linkedin.com/company/runbear"
   }
 }
