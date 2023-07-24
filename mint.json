@@ -52,10 +52,11 @@
     {
       "group": "Development",
       "pages": [
+        "development/client",
         "development/prompts",
         "development/few-shot-examples",
+        "development/callback-handlers",
         "development/localization",
-        "development/versioning",
         "development/ab-testing"
       ]
     },

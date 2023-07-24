@@ -55,7 +55,7 @@ Step 2. Add LangBear hook to your LangChain callbacks:
 from langchain.llms import OpenAI
 
 callback_handler = lb.llm_callback_handler()
-llm = OpenAI(temperature=0.9, callbacks=[callback_handler])
+llm = OpenAI(temperature=0.5, callbacks=[callback_handler])
 ```
 
 ```typescript typescript
@@ -64,12 +64,12 @@ TBD;
 
 </CodeGroup>
 
-Step 3. Get prompts from LangBear:
+Step 3. Get a prompt template from LangBear:
 
 <CodeGroup>
 
 ```python python
-prompt = lb.get_prompt("company-name-generation", lang="en")
+prompt = lb.get_prompt_template("company-name-generation")
 prompt.format(product="colorful socks")
 ```
 

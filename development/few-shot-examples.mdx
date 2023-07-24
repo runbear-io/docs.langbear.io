@@ -1,4 +1,73 @@
 ---
 title: "Few-shot examples"
-description: "TODO: description"
+description: "Manage your few-shot examples."
 ---
+
+Few-shot examples in Language Learning Models (LLMs) provide the model with a few task
+examples, guiding its predictions. Incorporated directly into the input, they help the
+model understand and respond accurately to new or complex tasks.
+
+## Adding few-shot examples
+
+Visit the `Few-shot examples` page to add few-shot examples.
+
+TODO: Screenshot here.
+
+## Setting up few-shot examples to be used in a prompt template
+
+Attach the few-shot examples to a prompt template.
+
+TODO: Screenshot here.
+
+## Getting a prompt with few-shot examples
+
+Few-shot examples will be included in the prompt returned by the `get_prompt_template`.
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+## Using an example selector
+
+You can pass an example selector to the `get_prompt_template` method to select the
+few-shot examples to be included in the prompt.
+
+<Note>
+  Check out [Using an example
+  selector](https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/few_shot_examples#using-an-example-selector)
+  section to learn more about example selectors.
+</Note>
+
+<CodeGroup>
+
+```python python
+from langchain.prompts.example_selector import SemanticSimilarityExampleSelector
+from langchain.vectorstores import Chroma
+from langchain.embeddings import OpenAIEmbeddings
+
+example_selector = SemanticSimilarityExampleSelector.from_examples(
+  [], # Keep it empty. The examples will be set by LangBear.
+  OpenAIEmbeddings(),
+  Chroma,
+  k=1
+)
+
+prompt = lb.get_prompt_template(
+  "company-name-generation",
+  example_selector=example_selector
+)
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
