@@ -1,0 +1,22 @@
+---
+title: "Callback handlers"
+description: "Collect data and visualize it."
+---
+
+First, initialize [LangBear client](/development/client).
+
+Create and pass callback handler to the model:
+
+<CodeGroup>
+
+```python python (llm)
+callback_handler = lb.callback_handler()
+llm = OpenAI(temperature=0.5, callbacks=[callback_handler])
+```
+
+```python python (chat)
+callback_handler = lb.callback_handler()
+chat_llm = ChatOpenAI(temperature=0.5, callbacks=[callback_handler])
+```
+
+</CodeGroup>

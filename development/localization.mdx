@@ -1,4 +1,29 @@
 ---
 title: "Localization"
-description: "TODO: description"
+description: "Localize your prompts to improve the user experience."
 ---
+
+While Language Learning Models (LLMs) support content generation in various languages,
+supplying prompts in different languages enhances the user experience.
+
+## Adding prompts in different languages
+
+TODO: Screenshot here.
+
+## Getting prompts for a specific language
+
+Pass `lang` as a parameter to the `get_prompt_template` function.
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation", lang="fr")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+Default language will be used if `lang` is not specified.

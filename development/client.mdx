@@ -1,0 +1,42 @@
+---
+title: "Client"
+description: "Initialize LangBear client to start using it."
+---
+
+## Initializing LangBear client
+
+### Using environment variable
+
+Set `LANGBEAR_ENDPOINT` environment variable to the endpoint of LangBear server.
+
+<CodeGroup>
+
+```python python
+from langbear import LangBear
+
+lb = LangBear()
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+### Using parameters
+
+Pass the endpoint to `end_point` parameter.
+
+<CodeGroup>
+
+```python python
+from langbear import LangBear
+
+lb = LangBear(end_point="http://localhost:3030")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>

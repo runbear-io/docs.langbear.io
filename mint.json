@@ -29,19 +29,9 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "icon": "discord",
+      "url": "https://discord.gg/7qW4bNCBy4"
     }
   ],
   "navigation": [
@@ -52,10 +42,11 @@
     {
       "group": "Development",
       "pages": [
+        "development/client",
         "development/prompts",
         "development/few-shot-examples",
+        "development/callback-handlers",
         "development/localization",
-        "development/versioning",
         "development/ab-testing"
       ]
     },
@@ -71,10 +62,6 @@
           "pages": ["application/vercel"]
         }
       ]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
     },
     {
       "group": "API Documentation",
