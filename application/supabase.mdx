@@ -2,3 +2,51 @@
 title: "Supabase"
 description: "Use Supabase to add a database to your LangBear app."
 ---
+
+LangBear primarily supports [Supabase](https://supabase.io/) as a database provider.
+
+## Create and configure a new LangBear app with Supabase
+
+First, navigate to [Supabase](https://supabase.io/) and create a new project on Supabase.
+You'll need to create an account if you don't already have one.
+
+Then create a new LangBear app with the `--database` flag set to `supabase`.
+
+```bash
+$ npx create-langbear-app my-app --database supabase
+> Enter your Supabase URL: <your-supabase-url>
+> Enter your Supabase key: <your-supabase-key>
+```
+
+The `create-langbear-app` command will set up your Supabase project with the tables LangBear needs.
+
+## Configure an existing LangBear app with Supabase
+
+If you already have a LangBear app and want to switch to Supabase, open `langbear.json` and set the `database` property to `supabase`.
+
+```json
+{
+  // ...
+  "database": "supabase"
+  // ...
+}
+```
+
+Open `.env` and set the `SUPABASE_URL` and `SUPABASE_KEY` variables.
+
+```
+SUPABASE_URL=<your-supabase-url>
+SUPABASE_KEY=<your-supabase-key>
+
+NEXT_PUBLIC_SUPABASE_URL=<your-supabase-url>
+```
+
+## Start your app
+
+Start your app with `npm run dev` and open [http://localhost:3030](http://localhost:3030) in your browser.
+
+```bash
+$ npm run dev
+```
+
+In the next section, we'll learn how to deploy the LangBear app to Vercel.
