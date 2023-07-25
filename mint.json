@@ -70,7 +70,6 @@
           ]
         },
         "development/prompt-ratings",
-        "development/callback-handlers",
         "development/localization",
         "development/ab-testing"
       ]

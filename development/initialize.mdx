@@ -40,3 +40,23 @@ TBD;
 ```
 
 </CodeGroup>
+
+## Adding callback handler
+
+LangBear callback handler tracks the API calls and responses.
+
+Create and pass callback handler to the model:
+
+<CodeGroup>
+
+```python python (llm)
+callback_handler = lb.callback_handler()
+llm = OpenAI(temperature=0.5, callbacks=[callback_handler])
+```
+
+```python python (chat)
+callback_handler = lb.callback_handler()
+chat_llm = ChatOpenAI(temperature=0.5, callbacks=[callback_handler])
+```
+
+</CodeGroup>

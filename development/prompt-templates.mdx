@@ -3,42 +3,19 @@ title: "Getting prompt templates"
 description: "Manage and improve your prompt templates online."
 ---
 
-LangBear introduces a web user interface that enables easy creation and management of prompt templates.
-Users can conveniently draft, alter, and organize prompt templates on the platform. This practical feature
-streamlines the prompt development process, ensuring a user-friendly experience.
+This page guides you through the process of getting prompt templates in your application.
+Check out [Application Prompt Templates](/application/prompt-templates) page to manage
+prompts.
 
-## Adding prompt templates to LangBear app
+<Note>
+  Don't forget to initialize [LangBear client](/development/initialize) before
+  using it.
+</Note>
 
-### Common fields
-
-- **key** - It is a unique identifier for the prompt.
-- **description** - It is a short description of the prompt.
-- **tags** - It is a list of tags for the prompt.
-- **type** - It is a type of the prompt. It can be `llm` or `chat`.
-
-### LLM-type prompt templates
-
-TODO: Screenshot here.
-
-### Chat-type prompt templates
-
-Messages for each role:
-
-- **SystemMessage** - It helps set the behavior of the assistant.
-- **HumanMessage** - It provide requests or comments for the assistant to respond to.
-- **AIMessage** - It gives examples of desired behavior.
-
-TODO: Screenshot here.
-
-## Getting prompt templates from LangBear app
-
-Don't forget to initialize [LangBear client](/development/initialize) before using it.
-
-### Fetch a prompt
+## Getting a prompt template
 
 The `get_prompt_template` method returns a prompt template related to the specified key.
-If the type is `llm`, the return type will be `PromptTemplate`. Conversely, for the
-`chat` type, the return type will be `ChatPromptTemplate`.
+It returns a `PipelinePromptTemplate` object that contains multiple prompt templates.
 
 <CodeGroup>
 
@@ -52,7 +29,26 @@ TBD;
 
 </CodeGroup>
 
-### Inject input variables
+## Localization
+
+Pass `lang` as a parameter to the `get_prompt_template` function to get prompt template
+for a language.
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation", lang="fr")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+Default language will be used if `lang` is not specified.
+
+## Formatting input variables
 
 Replace `{variable}` with the value of the variable.
 
@@ -67,7 +63,3 @@ TBD;
 ```
 
 </CodeGroup>
-
-### Handle errors
-
-TBD
