@@ -14,18 +14,23 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:contact@langbear.io"
+      "url": "mailto:contact@runbear.io"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://langbear.io"
+    "name": "Join the Waitlist",
+    "url": "TODO://WAITLIST_URL_HERE"
   },
   "anchors": [
     {
       "name": "Community",
       "icon": "discord",
       "url": "https://discord.gg/7qW4bNCBy4"
+    },
+    {
+      "name": "Join the Waitlist",
+      "icon": "bell",
+      "url": "TODO://WAITLIST_URL_HERE"
     }
   ],
   "navigation": [
