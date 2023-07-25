@@ -42,13 +42,16 @@
     {
       "group": "Application",
       "pages": [
-        "application/prompt-templates",
+        "application/setup",
+        {
+          "group": "Prompt templates",
+          "pages": [
+            "application/prompt-templates",
+            "application/few-shot-examples"
+          ]
+        },
         "application/prompt-ratings",
         "application/performance-monitoring",
-        {
-          "group": "Database",
-          "pages": ["application/supabase"]
-        },
         {
           "group": "Deployment",
           "pages": ["application/vercel"]
@@ -58,9 +61,15 @@
     {
       "group": "Development",
       "pages": [
-        "development/client",
-        "development/prompt-templates",
-        "development/few-shot-examples",
+        "development/initialize",
+        {
+          "group": "Prompt templates",
+          "pages": [
+            "development/prompt-templates",
+            "development/example-selector"
+          ]
+        },
+        "development/prompt-ratings",
         "development/callback-handlers",
         "development/localization",
         "development/ab-testing"
