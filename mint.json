@@ -31,7 +31,10 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart"]
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
     },
     {
       "group": "Application",
@@ -48,7 +51,9 @@
         "application/ab-testing",
         {
           "group": "Deployment",
-          "pages": ["application/vercel"]
+          "pages": [
+            "application/vercel"
+          ]
         }
       ]
     },
@@ -68,12 +73,19 @@
     },
     {
       "group": "Under the hood",
-      "pages": ["contact"]
+      "pages": [
+        "contact"
+      ]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/runbear_io",
     "github": "https://github.com/runbear-io",
     "linkedin": "https://www.linkedin.com/company/runbear"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-5JPKYFGN0W"
+    }
   }
 }
