@@ -11,26 +11,21 @@
     "light": "#81D7F7",
     "dark": "#004E7A"
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:contact@runbear.io"
-    }
-  ],
+  "topbarLinks": [],
   "topbarCtaButton": {
     "name": "Join the Waitlist",
     "url": "TODO://WAITLIST_URL_HERE"
   },
   "anchors": [
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/7qW4bNCBy4"
-    },
-    {
       "name": "Join the Waitlist",
       "icon": "bell",
       "url": "TODO://WAITLIST_URL_HERE"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/7qW4bNCBy4"
     }
   ],
   "navigation": [
@@ -70,6 +65,10 @@
         },
         "development/prompt-ratings"
       ]
+    },
+    {
+      "group": "Under the hood",
+      "pages": ["contact"]
     }
   ],
   "footerSocials": {
