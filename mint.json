@@ -11,23 +11,17 @@
     "light": "#81D7F7",
     "dark": "#004E7A"
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:contact@langbear.io"
-    }
-  ],
+  "topbarLinks": [],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://langbear.io"
+    "name": "Join the Waitlist",
+    "url": "https://tally.so/r/w8aNRA"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
+    {
+      "name": "Join the Waitlist",
+      "icon": "bell",
+      "url": "https://tally.so/r/w8aNRA"
+    },
     {
       "name": "Community",
       "icon": "discord",
@@ -73,17 +67,8 @@
       ]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "Under the hood",
+      "pages": ["contact"]
     }
   ],
   "footerSocials": {
