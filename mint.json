@@ -40,27 +40,38 @@
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "Development",
-      "pages": [
-        "development/client",
-        "development/prompts",
-        "development/few-shot-examples",
-        "development/callback-handlers",
-        "development/localization",
-        "development/ab-testing"
-      ]
-    },
-    {
       "group": "Application",
       "pages": [
+        "application/setup",
         {
-          "group": "Database",
-          "pages": ["application/supabase"]
+          "group": "Prompt templates",
+          "pages": [
+            "application/prompt-templates",
+            "application/few-shot-examples"
+          ]
         },
+        "application/prompt-ratings",
+        "application/performance-monitoring",
         {
           "group": "Deployment",
           "pages": ["application/vercel"]
         }
+      ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development/initialize",
+        {
+          "group": "Prompt templates",
+          "pages": [
+            "development/prompt-templates",
+            "development/example-selector"
+          ]
+        },
+        "development/prompt-ratings",
+        "development/localization",
+        "development/ab-testing"
       ]
     },
     {

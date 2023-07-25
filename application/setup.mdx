@@ -1,6 +1,6 @@
 ---
-title: "Supabase"
-description: "Use Supabase to add a database to your LangBear app."
+title: "Setup"
+description: "Setup and run your LangBear app."
 ---
 
 LangBear primarily supports [Supabase](https://supabase.io/) as a database provider.
@@ -47,6 +47,14 @@ Start your app with `npm run dev` and open [http://localhost:3030](http://localh
 
 ```bash
 $ npm run dev
+```
+
+### Custom ports
+
+LangBear application uses port 3030 by default. You can use the `PORT` environment variable to customize the port LangBear application runs on. For example, use this command to run in port 3333:
+
+```bash
+PORT=3333 npm run dev
 ```
 
 In the next section, we'll learn how to deploy the LangBear app to Vercel.

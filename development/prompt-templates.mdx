@@ -1,0 +1,65 @@
+---
+title: "Getting prompt templates"
+description: "Manage and improve your prompt templates online."
+---
+
+This page guides you through the process of getting prompt templates in your application.
+Check out [Application Prompt Templates](/application/prompt-templates) page to manage
+prompts.
+
+<Note>
+  Don't forget to initialize [LangBear client](/development/initialize) before
+  using it.
+</Note>
+
+## Getting a prompt template
+
+The `get_prompt_template` method returns a prompt template related to the specified key.
+It returns a `PipelinePromptTemplate` object that contains multiple prompt templates.
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+## Localization
+
+Pass `lang` as a parameter to the `get_prompt_template` function to get prompt template
+for a language.
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation", lang="fr")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+Default language will be used if `lang` is not specified.
+
+## Formatting input variables
+
+Replace `{variable}` with the value of the variable.
+
+<CodeGroup>
+
+```python python
+prompt.format(product="colorful socks")
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
