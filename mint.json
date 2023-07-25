@@ -14,13 +14,13 @@
   "topbarLinks": [],
   "topbarCtaButton": {
     "name": "Join the Waitlist",
-    "url": "TODO://WAITLIST_URL_HERE"
+    "url": "https://tally.so/r/w8aNRA"
   },
   "anchors": [
     {
       "name": "Join the Waitlist",
       "icon": "bell",
-      "url": "TODO://WAITLIST_URL_HERE"
+      "url": "https://tally.so/r/w8aNRA"
     },
     {
       "name": "Community",
