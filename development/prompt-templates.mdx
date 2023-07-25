@@ -14,13 +14,13 @@ prompts.
 
 ## Getting a prompt template
 
-The `get_prompt_template` method returns a prompt template related to the specified key.
-It returns a `LangBearPromptTemplate` object that contains multiple prompt templates.
+The `Prompts#get` method returns a prompt template related to the specified key.
+The returned object is a `LangBearPromptTemplate` that contains multiple prompt templates.
 
 <CodeGroup>
 
 ```python python
-prompt = lb.get_prompt_template("company-name-generation")
+prompt = lb.prompts.get("company-name-generation")
 ```
 
 ```typescript typescript
@@ -31,13 +31,13 @@ TBD;
 
 ## Localization
 
-Pass `lang` as a parameter to the `get_prompt_template` function to get prompt template
+Pass `lang` as a parameter to the `Prompts#get` function to get prompt template
 for a language.
 
 <CodeGroup>
 
 ```python python
-prompt = lb.get_prompt_template("company-name-generation", lang="fr")
+prompt = lb.prompts.get("company-name-generation", lang="fr")
 ```
 
 ```typescript typescript

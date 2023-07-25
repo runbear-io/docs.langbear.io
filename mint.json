@@ -21,12 +21,6 @@
     "name": "Dashboard",
     "url": "https://langbear.io"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
       "name": "Community",
@@ -70,19 +64,6 @@
           ]
         },
         "development/prompt-ratings"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
       ]
     }
   ],

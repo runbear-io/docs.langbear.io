@@ -10,12 +10,12 @@ learn more about prompt rating dashboard.
 ## Getting the prompt request key
 
 To save a prompt rating, you need to know the prompt request key. This key
-is returned when you call the `get_prompt_template` method:
+is returned when you call the `Prompts#get` method:
 
 <CodeGroup>
 
 ```python python
-prompt = lb.get_prompt_template("company-name-generation")
+prompt = lb.prompts.get("company-name-generation")
 prompt_reqeust_key = prompt.request_key
 ```
 
