@@ -43,7 +43,7 @@
       "group": "Development",
       "pages": [
         "development/client",
-        "development/prompts",
+        "development/prompt-templates",
         "development/few-shot-examples",
         "development/callback-handlers",
         "development/localization",
@@ -53,6 +53,8 @@
     {
       "group": "Application",
       "pages": [
+        "application/prompt-rating",
+        "application/performance-monitoring",
         {
           "group": "Database",
           "pages": ["application/supabase"]
