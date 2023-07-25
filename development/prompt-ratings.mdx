@@ -3,4 +3,44 @@ title: "Prompt ratings"
 description: "Track the user ratings of prompts."
 ---
 
-TODO: Integration guide.
+This page guides you through the process of developing prompt ratings.
+Check out [Application Prompt Ratings](/application/prompt-ratings) page to
+learn more about prompt rating dashboard.
+
+## Getting the prompt request key
+
+To save a prompt rating, you need to know the prompt request key. This key
+is returned when you call the `get_prompt_template` method:
+
+<CodeGroup>
+
+```python python
+prompt = lb.get_prompt_template("company-name-generation")
+prompt_reqeust_key = prompt.request_key
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
+
+## Saving prompt ratings
+
+To save a prompt rating, call the `save` method on the `Ratings` object:
+
+<CodeGroup>
+
+```python python
+lb.ratings.save(
+  request_key=prompt_request_key,
+  rating=0.5,                       # between 0.0 and 1.0
+  metadata={"key": "value"},        # optional
+)
+```
+
+```typescript typescript
+TBD;
+```
+
+</CodeGroup>
