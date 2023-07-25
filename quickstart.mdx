@@ -3,11 +3,30 @@ title: "Quickstart"
 description: "Start managing prompts in under 5 minutes."
 ---
 
-## Setup your development
+## Running LangBear application
 
-Learn how to setup LangBear locally and deploy them to the public.
+The LangBear app is a web application for prompt management. Users can create
+and update prompt templates on-the-fly, track versions, and monitor prompt
+ratings with it.
 
-### Add LangBear to your project
+Step 1. Create and configure a new LangBear app with Supabase.
+
+```bash
+$ npx create-langbear-app my-app --database supabase
+```
+
+Step 2. Start your app with `npm run dev`.
+
+```bash
+$ npm run dev
+```
+
+The LangBear application is now available at `http://localhost:3030`.
+
+## Setting up your development
+
+The LangBear library allows you to manage LangChain prompts from the LangBear
+web application, accomplished with just a few lines of code.
 
 Step 1. Add LangBear dependency to your project:
 
@@ -78,33 +97,3 @@ TBD;
 ```
 
 </CodeGroup>
-
-## Run LangBear application
-
-Step 1. Clone LangBear application:
-
-<Note>
-  Check out
-  [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-  page for more details about cloning a repository.
-</Note>
-
-```bash
-git clone git@github.com:runbear-io/langbear-app.git
-```
-
-Step 2. Go to the LangBear application directory and run the following command:
-
-```bash
-npm dev
-```
-
-The LangBear application is now available at `http://localhost:3030`.
-
-### Custom ports
-
-LangBear application uses port 3030 by default. You can use the `PORT` environment variable to customize the port LangBear application runs on. For example, use this command to run in port 3333:
-
-```bash
-PORT=3333 npm dev
-```

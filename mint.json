@@ -40,20 +40,10 @@
       "pages": ["introduction", "quickstart"]
     },
     {
-      "group": "Development",
-      "pages": [
-        "development/client",
-        "development/prompt-templates",
-        "development/few-shot-examples",
-        "development/callback-handlers",
-        "development/localization",
-        "development/ab-testing"
-      ]
-    },
-    {
       "group": "Application",
       "pages": [
-        "application/prompt-rating",
+        "application/prompt-templates",
+        "application/prompt-ratings",
         "application/performance-monitoring",
         {
           "group": "Database",
@@ -63,6 +53,17 @@
           "group": "Deployment",
           "pages": ["application/vercel"]
         }
+      ]
+    },
+    {
+      "group": "Development",
+      "pages": [
+        "development/client",
+        "development/prompt-templates",
+        "development/few-shot-examples",
+        "development/callback-handlers",
+        "development/localization",
+        "development/ab-testing"
       ]
     },
     {
